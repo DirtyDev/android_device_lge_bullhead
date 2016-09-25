@@ -114,6 +114,7 @@ TARGET_GLOBAL_CFLAGS += -O2 -mtune=cortex-a57.cortex-a53 -mfpu=neon-vfpv4 -mfloa
 TARGET_GLOBAL_CPPFLAGS += -O2 -mtune=cortex-a57.cortex-a53 -mfpu=neon-vfpv4 -mfloat-abi=softfp -funsafe-math-optimizations
 
 # Build a separate vendor.img
+BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.bullhead
