@@ -110,11 +110,11 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 100663296
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# Add Optimization
 TARGET_GLOBAL_CFLAGS += -O2 -mtune=cortex-a57.cortex-a53 -mfpu=neon-vfpv4 -mfloat-abi=softfp -funsafe-math-optimizations
 TARGET_GLOBAL_CPPFLAGS += -O2 -mtune=cortex-a57.cortex-a53 -mfpu=neon-vfpv4 -mfloat-abi=softfp -funsafe-math-optimizations
 
 # Build a separate vendor.img
-BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.bullhead
