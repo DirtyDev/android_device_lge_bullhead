@@ -61,8 +61,8 @@ WIFI_DRIVER_FW_PATH_AP  := "ap"
 
 BOARD_USES_SECURE_SERVICES := true
 
-TARGET_GLOBAL_CFLAGS += -O2 -mtune=cortex-a57.cortex-a53 -mfpu=neon-vfpv4 -mfloat-abi=softfp -funsafe-math-optimizations
-TARGET_GLOBAL_CPPFLAGS += -O2 -mtune=cortex-a57.cortex-a53 -mfpu=neon-vfpv4 -mfloat-abi=softfp -funsafe-math-optimizations
+TARGET_GLOBAL_CFLAGS += -O2 -mtune=cortex-a57.cortex-a53
+TARGET_GLOBAL_CPPFLAGS += -O2 -mtune=cortex-a57.cortex-a53
 
 #BOARD_HAS_FINGERPRINT_FPC := true
 
